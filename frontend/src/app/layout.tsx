@@ -28,22 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-fit`}
       >
-        {/* <div
-          className="w-full"
-          style={
-            {
-              // position: "fixed", // 背景を固定s
-            }
-          }
-        > */}
         <Header />
-        {/* </div> */}
         <div>{children}</div>
-        {/* <div className="w-full h-[300px]"> */}
         <Footer />
-        {/* </div> */}
       </body>
     </html>
   );
